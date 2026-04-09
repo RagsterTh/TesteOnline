@@ -8,11 +8,13 @@ public class GameController : NetworkBehaviour
     {
         
     }
-
+    public override void Spawned()
+    {
+        print("start");
+    }
     // Update is called once per frame
     void Update()
     {
-        if (Runner.LocalPlayer != PlayerRef.MasterClient)
-            return;
+
     }
 }
